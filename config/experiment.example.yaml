@@ -1,0 +1,31 @@
+project_root: /ABSOLUTE/PATH/protected_model_lab
+comfyui_root: /ABSOLUTE/PATH/ComfyUI
+base_model: /ABSOLUTE/PATH/base_model.safetensors
+lora_files:
+  - path: /ABSOLUTE/PATH/my_style_lora.safetensors
+    strength_model: 1.0
+    strength_clip: 1.0
+optional_workflow: null
+optional_calibration_prompts: null
+output_root: /ABSOLUTE/PATH/protected_model_lab/outputs
+private_fractions: [0.20, 0.35, 0.50, 0.65]
+architecture: auto
+
+# Required only for deterministic ComfyUI image validation. These names must
+# already be registered in the local ComfyUI model folders.
+inference:
+  teacher_model_name: base_model.safetensors
+  adapter_name: my_style_lora.safetensors
+  text_encoder_name: text_encoder.safetensors
+  text_encoder_type: krea2
+  vae_name: vae.safetensors
+  prompt: "REPLACE WITH A MODEL-APPROPRIATE FIXED PROMPT"
+  negative_prompt: ""
+  seed: 812301
+  width: 768
+  height: 1024
+  steps: 8
+  cfg: 1.0
+  sampler_name: euler
+  scheduler: beta
+  denoise: 1.0

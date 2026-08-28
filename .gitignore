@@ -1,0 +1,32 @@
+# Local configuration and generated evidence
+config/experiment.yaml
+outputs/**
+!outputs/.gitkeep
+reports/**
+!reports/README.md
+
+# Never commit model material
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.spcore
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Python/editor state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+*.tmp
+.DS_Store
+.idea/
+.vscode/

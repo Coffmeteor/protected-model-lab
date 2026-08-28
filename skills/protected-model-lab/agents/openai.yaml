@@ -1,0 +1,4 @@
+interface:
+  display_name: "Protected Model Lab"
+  short_description: "Validate local carrier and private-core model splits"
+  default_prompt: "Use $protected-model-lab to inspect my local model and adapter, then run a safe split feasibility validation."

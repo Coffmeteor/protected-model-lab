@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protected-model-lab"
+version = "0.1.0"
+description = "Research framework for coefficient and direction splitting of local diffusion adapters"
+requires-python = ">=3.11"
+dependencies = ["torch", "safetensors", "PyYAML", "numpy", "Pillow"]
+license = {file = "LICENSE"}
+classifiers = ["License :: Other/Proprietary License"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+metrics = ["scikit-image"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

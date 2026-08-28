@@ -1,0 +1,1 @@
+"""Asset inspection report generation."""
